@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const { app, BrowserWindow, ipcMain } = require("electron");
 const path = require("node:path");
 const sqlite = require("sqlite-electron");

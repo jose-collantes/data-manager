@@ -10,6 +10,14 @@ First, from the terminal, you need to install all the node dependencies:
 
     npm i
 
-Then, run the project:
+Then, create an .env file in the root of the project, and set the DOCUMENTS_FOLDER environment variable to the following value:
+
+    DOCUMENTS_FOLDER=documents_no-content
+
+Finally, run the project:
 
     npm start
+
+## Note of clarification
+
+This app uses (Windows) Powershell to open and manage Word.Application instances. Therefore, having Microsoft Office installed in your machine is also required.

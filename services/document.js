@@ -1,11 +1,10 @@
 const { ps } = require("./terminal");
 const path = require("path");
 
-// const docsFolderPath = path.join(__dirname, "..", "assets/documents");
 const docsFolderPath = path.join(
   __dirname,
   "..",
-  "assets/documents_no-content"
+  `assets/${process.env.DOCUMENTS_FOLDER}`
 );
 
 function open(courseName, lessonNumber) {
